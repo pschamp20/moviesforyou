@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu';
+    background-color: #0F0F0F;
+}
+
+.navbar {
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+}
+
+.logo a{
+    text-decoration: none;
+    color: rgb(229, 9, 20);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.logo{
+    padding: 5px 50px;
+}
+
+.option {
+    display: flex;
+    padding: 10px 50px;
+    justify-content: space-around;
+    font-size: 1.3rem;
+
+}
+
+.option ul li{
+    list-style-type: none;
+    margin: 0 0.3rem;
+    padding: 0 10px;
+}
+
+.option ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.option ul img{
+    width: 2rem;
+    padding-left: 0;
+    margin-left: -1rem
+}
+
+
+.option ul li a:hover{
+    color: rgb(229, 9, 20);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .95rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    align-items: center;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#app {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+}
+
+span{
+    color: rgb(229, 9, 20);
+    font-weight: bold;
+}
+
+.movies {
+    background-color: #1a2228;
+    color: white;
+    width: 22%;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.movies p img {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 6rem;
+}
+
+.btn button {
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    border: none;
+}
+
+.btn button:hover{
+    background-color: rgb(229, 9, 20);
+    color: white;
+}
+
+#name{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(229, 9, 20);
+}
+
+.search {
+    text-align: center;
+    padding: 9rem 4rem;
+    padding-bottom: 0;
+    color: white;
+}
+
+.search input{
+    border: none;
+    border-radius: 10rem;
+    width: 80%;
+    padding: 20px 2rem;
+    font-size: 1.3rem;
+    height: 2.7rem;
+
+}
+
+.search button{
+    width: 15%;
+    border: none;
+    border-radius: 5rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-weight: bold;
+}
+
+
+.footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 1.5rem 10px;
+    font-weight: bold;
+}
+
+@media (max-width :1360px){
+    .option a{
+        font-size: 1rem;
+    }
+
+    .logo a {
+        font-size: 1.3rem;
+    }
+
+    .option ul img {
+        width: 1.5rem;
+    }
+
+    .navbar{
+        align-items: center;
+    }
+
+    .search button,input{
+        font-size: 1rem;
+    }
+
+    #app {
+        padding-top: 3.3rem;
+    }
+
+}
+
+
+@media (max-width: 1160px){
+    .movies{
+        width: 20%;
+    }
+
+    #name {
+        font-size: 0.8rem;
+    }
+
+    .movies p {
+        font-size: 0.7rem;
+    }
+
+    .option a {
+        font-size: 0.9rem;
+    
+    }
+
+    .option ul li{
+        align-items: center;
+    }
+
+    .logo a {
+        font-size: 1rem;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search button{
+        margin-top: 10px;
+        width: 20%;
+    }
+
+    #app {
+        padding-top: 3.5rem;
+    }
+
+
+}
+
+@media (max-width: 1075px){
+
+    .option a {
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .option ul{
+        margin-bottom: 10px;
+    }
+
+    .option ul li{
+        margin: 0.1px;
+        padding: 0.5px;
+    }
+
+
+    .logo a {
+        font-size: 1rem;
+    }
+
+    .option ul img {
+        width: 1.2rem;
+    }
+
+    .search{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search input{
+        width: 100%;
+    }
+
+    .search button{
+        margin-top: 10px;
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 980px){
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .option {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .option ul a{
+       font-size: 1rem;
+    }
+    
+    .option ul img {
+        width: 1.8rem;
+        float: center;
+    }
+
+    .option ul li {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 15px;
+    }
+
+    .option ul{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .option ul li:hover{
+        background-color: #1a2228;
+    }
+
+    .option.active {
+        display: flex;
+    }
+
+    #app {
+        padding-top: 3rem;
+    }
+
+
+    .movies {
+        width: 40%;
+    }
+    #name {
+        font-size: 1.2rem;
+    }
+
+    .movies p {
+        font-size: 1.1rem;
+    }
+
+    .btn{
+        margin: 2rem 4rem;
+    }
+}
+
+
+@media (max-width: 550px){
+
+    #name {
+        font-size: 0.9rem;
+    }
+
+    .movies p {
+        font-size: 0.8rem;
+    }
+
+    #app {
+        padding-top: 2.8rem;
+    }
+
+
+    .logo a {
+        margin-left: -1.8rem;
+    }
+
+    .btn{
+        margin: 2rem 4rem;
+    }
+
+    .search {
+        padding: 8rem 2rem;
+    }
+
+    .search button{
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px){
+    .movies {
+        width: 100%;
+    }
+
+    #name {
+        font-size: 0.9rem;
+    }
+
+    .movies p {
+        font-size: 0.8rem;
+    }
+
+    .btn{
+        margin: 2rem;
+    }
+
+    .search button{
+        width: 50%;
+    }
+
+}
